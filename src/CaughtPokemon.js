@@ -15,13 +15,13 @@ const CaughtPokemon = (props) => {
   };
 
   return (
-    <>
+    <div className="caught-container">
       <p>Caught {caught.length} Pokemon on {props.date}</p>
       <button onClick={catchPokemon}>Click Me</button>
       <ul>
         {caught.map((eachCaught) => (<li>{eachCaught}</li>))}
       </ul>
-    </>
+    </div>
   );
 };
 
